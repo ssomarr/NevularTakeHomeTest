@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Flight Distance Calculator">
+        <div class="slds-m-around_medium">
+            <lightning-combobox label="Departure Airport"
+                                value={selectedDepartureAirport}
+                                options={airports}
+                                onchange={handleDepartureChange}>
+            </lightning-combobox>
+            <lightning-combobox label="Arrival Airport"
+                                value={selectedArrivalAirport}
+                                options={airports}
+                                onchange={handleArrivalChange}>
+            </lightning-combobox>
+            <lightning-button label="Save Flight" onclick={handleSaveFlight}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
